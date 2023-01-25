@@ -1,0 +1,163 @@
+/** Grid system - https://www.w3schools.com/css/css_rwd_grid.asp **/
+* {
+    box-sizing: border-box;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+ 
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+/** Overflow (for tables) - https://www.w3schools.com/howto/howto_css_table_responsive.asp **/
+.overflow {
+    overflow-x:auto;
+}
+
+body{
+    background-color: #171a21;
+     width: 100%;
+        margin: 0;
+    text-align: center;
+
+    color: lightgrey;
+    
+/*
+    margin-top: 48.5px;
+    margin-bottom: 100px;
+    margin-right: 75px;
+    margin-left: 75px;
+    */
+  }
+
+.main{
+    margin-top: 48.5px;
+    margin-bottom: 100px;
+    margin-right: 65px;
+    margin-left: 65px;
+    background-color:#1b2838 ;
+  }
+
+  html { background-color: #171a21; }
+
+  .p1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: lightgrey;
+    text-align: center;
+    font-size: larger;
+    font-weight: 520;
+    margin: 2.5%;
+  }
+  h1{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+    color: #66c0f4;
+
+  }
+  h2{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /**  background-color:#2F3236; **/
+    color: lightgrey;
+
+
+  }
+  .btn{
+    background-color: transparent;
+    border: 0px;
+    font-size:48px;
+    color:#0072B1
+  }
+  .btn2{
+    background-color: transparent;
+    border: 0px;
+    font-size:48px;
+    color:purple;
+  }
+
+  .btn3{
+    background-color: transparent;
+    border: 0px;
+    font-size:48px;
+    color:orangered;
+  }
+
+
+.btn4{
+  background-color: transparent;
+  border: 0px;
+  font-size:48px;
+  color:whitesmoke;
+}
+  
+  .image{
+    height: 250px;
+    width: 250px;
+  }
+
+  hr{
+    height: 4px;
+    background-color: #1b2838;
+    border: none;
+}
+
+
+
+
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  /*  background-color: #2a475e; */
+  background-color: rgba(11,16,22,.6);
+
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #66c0f4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: purple;
+    color: white;
+  }
+
+  .Contact{
+
+    background-color: #2a475e;
+  }
+
