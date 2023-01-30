@@ -30,6 +30,7 @@
 }
 
 body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #171a21;
      width: 100%;
         margin: 0;
@@ -116,12 +117,6 @@ body{
     background-color: #1b2838;
     border: none;
 }
-
-
-
-
-
-
 
 /* Add a black background color to the top navigation */
 .topnav {
