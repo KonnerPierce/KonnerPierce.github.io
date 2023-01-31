@@ -68,6 +68,13 @@ body{
     
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   
+     color: lightgrey;
+
+  }
+  .myname{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
     color: #66c0f4;
 
   }
@@ -75,7 +82,7 @@ body{
     
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     /**  background-color:#2F3236; **/
-    color: lightgrey;
+
 
 
   }
@@ -152,6 +159,20 @@ body{
   }
 
   .Contact{
-
-    background-color: #2a475e;
+  background-color: #2a475e;
+  /* background-size: 1; */
+  
   }
+
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+   
+}
+/*.work{
+  background-color:#1b2838 ;
+}*/
+
+.row{
+  background-color: #1b2838;
+}
