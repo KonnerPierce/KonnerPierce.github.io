@@ -134,6 +134,7 @@ body{
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    z-index: 99;
   }
   
   /* Style the links inside the navigation bar */
@@ -144,6 +145,7 @@ body{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    z-index: 99;
   }
   
   /* Change the color of links on hover */
@@ -175,4 +177,24 @@ body{
 
 .row{
   background-color: #1b2838;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  z-index: 98;
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 98;
 }
