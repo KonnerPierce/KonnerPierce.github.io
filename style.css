@@ -54,7 +54,9 @@ body{
     background-color:#1b2838 ;
   }
 
-  html { background-color: #171a21; }
+  html { background-color: #171a21; 
+      scroll-behavior: smooth;
+     }
 
   .p1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
