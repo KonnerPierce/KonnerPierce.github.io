@@ -156,7 +156,7 @@ body{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 17px;
     z-index: 99;
   }
   
@@ -200,7 +200,7 @@ body{
 }
 
 /* Then style the iframe to fit in the container div with full height and width */
-.responsive-ifrana {
+.responsive-iframe {
   position: absolute;
   top: 0;
   left: 0;
