@@ -70,8 +70,10 @@ body{
     color:whitesmoke;
     text-align: center;
     font-size: larger;
-    font-weight: 520;
+    font-weight: 420;
     margin: 2.5%;
+    margin-right: 5%;
+    margin-left: 5%;
   }
   h1{
     
@@ -211,6 +213,19 @@ body{
   z-index: 98;
 }
 .Link{
-  color:whitesmoke;
+  color: #66c0f4;
   text-decoration: none;
+}
+
+.projects{
+  color: #66c0f4;
+}
+
+.break{
+  background-color: #171a21; 
+  height: 6px;
+}
+
+.broken{
+  color: whitesmoke;
 }
