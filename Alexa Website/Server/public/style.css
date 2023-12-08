@@ -1,0 +1,281 @@
+/** Grid system - https://www.w3schools.com/css/css_rwd_grid.asp **/
+* {
+    box-sizing: border-box;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+ 
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/** Overflow (for tables) - https://www.w3schools.com/howto/howto_css_table_responsive.asp **/
+.overflow {
+    overflow-x:auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+
+th {
+    width: 33.3%
+}
+
+
+body{
+    text-align: center;
+    margin: 2%;
+    overflow-x:auto;
+  }
+
+  html{
+    background-color: #d3d3d3;
+  }
+
+  /*CSS related to the nav bar*/
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(33, 33, 33);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: whitesmoke;
+  }
+  
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  /*CSS related to putting text over images*/
+
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+    /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+    /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+   /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+    /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+   /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /*Makes our image at the top grayscaled*/
+  .img1 {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    max-width: 100%;
+    height: auto;
+}
+
+/*same code as above without grayscale*/
+.img2 {
+  max-width: 100%;
+  height: auto;
+}
+
+.meetmangotext{
+  margin: 2.5%;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+  h2{
+    margin: 2.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+  .p1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: larger;
+    font-weight: 520;
+    margin: 2.5%;
+  }
+
+  .ITcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*Classes that change how text behaves*/
+  .text{
+    font-size: 20px;
+    padding-left: 20px;
+    float: left;
+  }
+
+  .text2{
+    font-size: 20px;
+    padding-left: 20px;
+    float: center;
+  }
+
+  /*Class that pushes image to the left*/
+  .image{
+    max-width: 15%;
+    max-height:10%;
+    float: left;
+    padding-left: 35px;
+  }
+
+  /*Edits the font and adds a drop shadow to text*/
+  h1{
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+
+
+  table{
+    padding: 15px;
+    border: white;
+  }
+  
+
+  .blueButton {
+    box-shadow: 0px 10px 14px -7px #276873;
+    background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    background-color:#599bb3;
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:20px;
+    font-weight:bold;
+    padding:13px 32px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+}
+.blueButton:hover {
+    background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+    background-color:#408c99;
+}
+.blueButton:active {
+    position:relative;
+    top:1px;
+}
+  
+  
+  .box{
+   
+    margin: 0 auto;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid #111;
+    overflow: hidden;
+  }
+
+  /* Img Gallery */
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.moveDown{
+  margin-top: 17%;
+  margin-bottom: 10px;
+}
+
+p2{
+  font-size:20px;
+}
+.centerText{
+  text-align: center;
+}

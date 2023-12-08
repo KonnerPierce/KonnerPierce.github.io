@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>            
+        <title>Commands</title>
+        <link rel='stylesheet' href='style.css'>
+    </head>
+    <body>
+        <ul>
+            <li><a href="schedule.html">Home</a></li>
+            <li><a href="creators.html">About Us</a></li>
+            <li><a href="commands.html">Show us Commands</a></li>
+          </ul>
+        <h1> Used Commands</h1>
+        <div class='row'>
+            <div >
+                <button id='search' class="blueButton">Show used commands</button>
+            </div>
+        </div>
+        <div id="Commands" class="overflow centered">
+
+        </div>
+
+    </body>
+
+    <script>
+             const isEmpty = (obj) => Object.keys(obj).length === 0;
+
+document.getElementById('search').addEventListener('click', (event) => {
+    const getParameters = {};
+
+    //Settings for FETCH API request
+    let fetchSettings = {
+        method: 'GET',
+    
+        
+        
+    };
+
+    //Send FETCH API request
+    fetch("http://localhost/commands/" + (!isEmpty(getParameters) ? '?' + new URLSearchParams(getParameters) : ''), fetchSettings)
+   
+        .then((response) => {
+            return new Promise((resolve) => response.json()
+                .then((json) => resolve({
+                
+                    status: response.status,
+                    json,
+                })
+            ));
+        })
+        //Logic to display errors on form 
+        .then(({status, json}) => {
+            if (status === 200) {
+                let displayTable = '<table>' +
+                                    '<thead>' +
+                                    '<tr>' +
+                                        '<th>Intent</th>' +
+                                        '<th>Date & Time</th>' +
+                                    '</tr>' +
+                                '</thead>' +
+                                '<tbody>';
+                if (typeof json.data !== 'undefined') {
+                    for (row of json.data) {
+                        displayTable += '<tr>' +
+                            '<td >' + row.name + '</td>' +
+                            '<td>' + row.datetime + '</td>' +
+                        '</tr>';
+                    }
+                }
+                displayTable += '</tbody></table>';
+                document.getElementById('Commands').innerHTML = displayTable;  
+            } 
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    return;
+});                           
+    </script>
+
+</html>
