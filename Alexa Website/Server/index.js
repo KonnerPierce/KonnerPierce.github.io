@@ -19,7 +19,7 @@ app.use(express.static('public'))
 
 
 //The * in app.* needs to match the method type of the request
-app.get('/commands/', upload.none(), async (request, response) => {
+app.get('/data/', upload.none(), async (request, response) => {
    
     let result = {};
     try {
