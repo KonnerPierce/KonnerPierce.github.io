@@ -32,14 +32,14 @@ document.getElementById('search').addEventListener('click', (event) => {
 
     //Settings for FETCH API request
     let fetchSettings = {
-        method: 'GET',
+        method: 'POST',
     
         
         
     };
 
     //Send FETCH API request
-    fetch("http://localhost/commands/" + (!isEmpty(getParameters) ? '?' + new URLSearchParams(getParameters) : ''), fetchSettings)
+    fetch("https://konner.domainnameforclass.org/data/" + (!isEmpty(getParameters) ? '?' + new URLSearchParams(getParameters) : ''), fetchSettings)
    
         .then((response) => {
             return new Promise((resolve) => response.json()
