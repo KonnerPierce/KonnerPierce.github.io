@@ -53,6 +53,8 @@ document.getElementById('search').addEventListener('click', (event) => {
         //Logic to display errors on form 
         .then(({status, json}) => {
             if (status === 200) {
+                Console.Log(json);
+                Console.Log(JSON);
                 let displayTable = '<table>' +
                                     '<thead>' +
                                     '<tr>' +
