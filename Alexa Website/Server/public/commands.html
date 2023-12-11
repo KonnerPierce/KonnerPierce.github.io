@@ -64,8 +64,8 @@
                         '</tr>' +
                         '</thead>' +
                         '<tbody>';
-                    if (typeof json.data !== 'undefined') {
-                        for (row of json.data) {
+                    if (typeof json !== 'undefined') {
+                        for (row of json) {
                             displayTable += '<tr>' +
                                 '<td >' + row.name + '</td>' +
                                 '<td>' + row.datetime + '</td>' +
